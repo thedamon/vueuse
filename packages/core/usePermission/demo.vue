@@ -11,6 +11,7 @@ const camera = usePermission('camera')
 const clipboardRead = usePermission('clipboard-read')
 const clipboardWrite = usePermission('clipboard-write')
 const gyroscope = usePermission('gyroscope')
+const geolocation = usePermission('geolocation')
 const magnetometer = usePermission('magnetometer')
 const microphone = usePermission('microphone')
 const notifications = usePermission('notifications')
@@ -28,6 +29,7 @@ const code = computed(() => YAML.dump(reactive({
   camera,
   clipboardRead,
   clipboardWrite,
+  geolocation,
   gyroscope,
   magnetometer,
   microphone,
